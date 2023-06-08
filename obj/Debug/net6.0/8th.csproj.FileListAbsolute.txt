@@ -1,0 +1,15 @@
+C:\Users\NoKatana\Desktop\home\8th\bin\Debug\net6.0\8th.exe
+C:\Users\NoKatana\Desktop\home\8th\bin\Debug\net6.0\8th.deps.json
+C:\Users\NoKatana\Desktop\home\8th\bin\Debug\net6.0\8th.runtimeconfig.json
+C:\Users\NoKatana\Desktop\home\8th\bin\Debug\net6.0\8th.dll
+C:\Users\NoKatana\Desktop\home\8th\bin\Debug\net6.0\8th.pdb
+C:\Users\NoKatana\Desktop\home\8th\obj\Debug\net6.0\8th.csproj.AssemblyReference.cache
+C:\Users\NoKatana\Desktop\home\8th\obj\Debug\net6.0\8th.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NoKatana\Desktop\home\8th\obj\Debug\net6.0\8th.AssemblyInfoInputs.cache
+C:\Users\NoKatana\Desktop\home\8th\obj\Debug\net6.0\8th.AssemblyInfo.cs
+C:\Users\NoKatana\Desktop\home\8th\obj\Debug\net6.0\8th.csproj.CoreCompileInputs.cache
+C:\Users\NoKatana\Desktop\home\8th\obj\Debug\net6.0\8th.dll
+C:\Users\NoKatana\Desktop\home\8th\obj\Debug\net6.0\refint\8th.dll
+C:\Users\NoKatana\Desktop\home\8th\obj\Debug\net6.0\8th.pdb
+C:\Users\NoKatana\Desktop\home\8th\obj\Debug\net6.0\8th.genruntimeconfig.cache
+C:\Users\NoKatana\Desktop\home\8th\obj\Debug\net6.0\ref\8th.dll
