@@ -1,20 +1,20 @@
-﻿//Задача 54: Задайте двумерный массив.
-//Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
+﻿//Задача: Задайте двумерный массив. Напишите программу, 
+//которая упорядочит по убыванию элементы каждой строки двумерного массива.
 
-void RandomArray(int[,] array)
+void FillArray(int [,] array)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+  for (int i=0; i<array.GetLength(0); i++)
+  {
+    for (int j=0; j<array.GetLength(1); j++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            array[i, j] = new Random().Next(1, 10);
-        }
+      array[i,j] = new Random().Next(1,10);
     }
+  }
 }
 
-void SortLow(int[,] array)
+void Regression(int [,] array)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+   for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
@@ -31,7 +31,6 @@ void SortLow(int[,] array)
     }
 }
 
-
 void PrintArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -44,11 +43,9 @@ void PrintArray(int[,] array)
     }
 }
 
-
-int[,] massive = new int[3, 4];
-RandomArray(massive);
-PrintArray(massive);
-SortLow(massive);
-Console.WriteLine();
-PrintArray(massive);
-
+int[,] ArrayRegression = new int[3, 4];
+FillArray(ArrayRegression);
+PrintArray(ArrayRegression);
+Regression(ArrayRegression);
+Console.WriteLine("_______");
+PrintArray(ArrayRegression);
