@@ -22,9 +22,9 @@ void Regression(int [,] array)
             {
                 if (array[i, k] < array[i, k + 1])
                 {
-                    int temp = array[i, k + 1];
+                    int snail = array[i, k + 1];
                     array[i, k + 1] = array[i, k];
-                    array[i, k] = temp;
+                    array[i, k] = snail;
                 }
             }
         }
@@ -110,7 +110,7 @@ Console.WriteLine($"Minimal row is {row}.");
 */
 //Задача: Задайте две матрицы. Напишите программу,
 //которая будет находить произведение двух матриц.
-
+/*
 int Prompt(string message)
 {
   Console.Write(message);
@@ -194,3 +194,96 @@ PrintArray(secondArr);
 Console.WriteLine("The result is:");
 int[,] newArray = MultiplyArray(firstArr, secondArr);
 PrintArray(newArray);
+*/
+
+
+//Задачa: Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. 
+//Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+
+/*
+int Prompt(string message)
+{
+  Console.Write(message);
+  int result = Convert.ToInt32(Console.ReadLine());
+  return result;
+}
+
+int[,,] CreateArray(int a, int b, int c)
+{
+  int[,,] array = new int[a, b, c];
+  return array;
+}
+
+void PrintArray(int[,,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+      for (int k = 0; k < array.GetLength(2); k++)
+      {
+        Console.Write($"{array[i, j, k]} ({i},{j},{k}) ");
+      }
+      Console.WriteLine();
+    }
+  }
+}
+
+int[,,] FillArrayRandom(int[,,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+      for (int k = 0; k < array.GetLength(2); k++)
+      {
+        array[i, j, k] = new Random().Next(1, 10);
+      }
+    }
+  }
+  return array;
+}
+
+int[,,] newArr3D = CreateArray(Prompt("Input A: "), Prompt("Input B: "), Prompt("Input C: "));
+Console.WriteLine();
+FillArrayRandom(newArr3D);
+PrintArray(newArr3D);
+*/
+
+
+
+int [,] Square = new int [4, 4];
+int snail = 1;
+int i = 0;
+int j = 0;
+
+while (snail <= Square.GetLength(0) * Square.GetLength(1))
+{
+  Square[i, j] = snail;
+  snail++;
+  if (i <= j + 1 && i + j < Square.GetLength(1) - 1)
+    j++;
+  else if (i < j && i + j >= Square.GetLength(0) - 1)
+    i++;
+  else if (i >= j && i + j > Square.GetLength(1) - 1)
+    j--;
+  else
+    i--;
+}
+Console.WriteLine("LOOK, MUM! I'M A SNAIL!!!");
+void WriteArray (int[,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+      if (array[i,j] / 10 <= 0)
+      Console.Write($" {array[i,j]} ");
+
+      else Console.Write($"{array[i,j]} ");
+    }
+    Console.WriteLine();
+  }
+}
+
+WriteArray(Square);
